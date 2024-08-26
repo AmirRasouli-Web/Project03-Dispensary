@@ -1,0 +1,93 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+    &:visited{
+        color: inherit;
+    }
+}
+li{
+    list-style-type: none;
+}
+.row{
+    display: flex;
+    flex-flow: row wrap;
+    width: 100%;
+}
+@font-face{
+    font-family: GalosText;
+    src: url(../fonts/GolosText/GolosText-VariableFont_wght.ttf);
+}
+@font-face {
+    font-family: Aboreto;
+    src: url(../fonts/Aboreto/Aboreto-Regular.ttf);
+}
+@keyframes anime1{
+    to{
+        box-shadow: 0 0 10px 5px rgb(72, 203, 203) inset;
+    }
+}
+@keyframes anime2{
+    to{
+        box-shadow: 0 0 10px 5px rgb(72, 203, 203);
+    }
+}
+@keyframes scroll-watcher{
+    to{
+        /* transform: scaleY(1) scaleX(1); */
+        scale: 1 1;
+    }
+}
+@keyframes moveUp {
+    from{
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+@keyframes fadeIn {
+    to{
+        scale: 1;
+        opacity: 1;
+    }
+}
+@keyframes transDown {
+    to{
+        transform: translateY(40px);
+    }
+}
+@keyframes transUp {
+    from{
+        transform: translateY(0);
+    }
+    to{
+        transform: translateY(-80px);
+    }
+}
+@keyframes transDownCus {
+    to{
+        transform: translateX(30px) rotate(-5deg) translateY(-80px);
+    }
+}
+@keyframes transUpCus {
+    to{
+        transform: translateX(-25px) rotate(5deg) translateY(80px);
+    }
+}
+@keyframes rot {
+    to{
+        transform: translateY(0px) rotate(0deg);
+    }
+}
+@keyframes op {
+    to{
+        opacity: 1;
+    }
+}
